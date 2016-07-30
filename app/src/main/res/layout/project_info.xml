@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<!--
+            <ImageView
+                android:id="@+id/developer_front"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/sample_layout" />
+-->
+
+            <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/image_pager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+            </android.support.v4.view.ViewPager>
+            <TextView
+                android:id="@+id/developer_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_pager"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:text="富力城"
+                android:textStyle="bold"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/project_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/developer_title"
+                android:text="项目名称: 国庆献礼"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/location_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingBottom="20dp"
+                android:layout_below="@+id/project_title"
+                android:text="地点: 东城"
+                android:textSize="15dip" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView 
+        android:id="@+id/developer_desc"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="天津富力城项目位于南开区老城墙内，毗邻规划中的地铁1好险，2好险。占地面积大概是100000平方米，最近的一个商业中心距离只有20米。天津富力城项目位于南开区老城墙内，毗邻规划中的地铁1好险，2好险。占地面积大概是100000平方米，最近的一个商业中心距离只有20米。"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            android:weightSum="1"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/btn_sale"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_selector"
+                android:textColor="#FFF"
+                android:text="出售户型" />
+
+            <Button
+                android:id="@+id/btn_deal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_selector"
+                android:textColor="#FFF"
+                android:text="优惠活动" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

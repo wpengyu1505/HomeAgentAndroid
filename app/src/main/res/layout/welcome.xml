@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:background="#44F"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:weightSum="1"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/signin"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_shape"
+                android:textColor="#44F"
+                android:text="登录" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_shape"
+                android:textColor="#44F"
+                android:text="注册" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="HomeAgent"
+            android:textColor="#FFF"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="房产经纪人的好助手"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/status_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="万科欧泊 - 3室1厅"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="20dip"
+        android:textStyle="bold"/>
+ 
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/status_layout"
+        android:textColor="#343434"
+        android:textSize="15dip"
+        android:layout_marginTop="1dip"
+        android:text="到访" />
+ 
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="right">
+
+        <Spinner
+            android:id="@+id/status_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false">
+
+        </Spinner>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <ImageView
+        android:id="@+id/sample_layout"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="#DDD"
+        android:src="@drawable/sample_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#DDD">
+        <TextView
+            android:id="@+id/bedroom_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="3 卧室"/>
+        <TextView
+            android:id="@+id/livingroom_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/bedroom_count"
+            android:text="1 客厅"/>
+        <TextView
+            android:id="@+id/kitchen_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/livingroom_count"
+            android:text="1 厨房"/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_alignParentRight="true"
+            android:text="$2,000,000"/>
+        <TextView
+            android:id="@+id/square_meters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/price"
+            android:text="135 m2"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/anything_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#44F"
+        android:text="任意功能"
+        android:textSize="30dp"
+        android:textColor="#FFF"/>
+</LinearLayout>

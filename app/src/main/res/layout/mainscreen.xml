@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="HomeAgent" >
+
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:weightSum="2"
+            android:layout_height="fill_parent" >
+
+            <TableRow
+                android:id="@+id/mainRow1"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:weightSum="2"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/sale"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="Setttings" />
+                <Button
+                    android:id="@+id/customer_management"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="Setttings" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/mainRow2"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:weightSum="2"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/customer_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="Setttings" />
+                <Button
+                    android:id="@+id/user_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="Setttings" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">HomeAgent</string>
+	<string name="tab_project">project</string>
+	<string name="tab_client">client</string>
+	<string name="tab_agent">agent</string>
+	<string name="tab_setup">setup</string>
+</resources>
